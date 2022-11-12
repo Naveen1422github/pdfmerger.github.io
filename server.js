@@ -3,7 +3,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const multer  = require('multer')
-const {mergepdfs}  = require('./merge')
+const {mergepdfs}  = require('merge')
 const upload = multer({ dest: 'uploads/' })
 app.use('/static', express.static('public'))
 const port = 3000
